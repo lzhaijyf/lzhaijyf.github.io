@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fff</title>
+    <style type="text/css">
+        div{
+            width:20%;
+            height:20%;
+            margin:0em;
+            padding:0.5em;
+            border:5px solid ;
+            display:block;
+            position:absolute;
+
+            background-color:rgba(255,5,5,0.5);
+        }
+        div.male{
+            border-radius:10% ;
+            border-color:blue ;
+        }
+        div.female{
+            border-radius:50% ;
+            border-color:red  ;
+        }
+        div p{
+            position:relative;
+            left:30%;top:30%;
+            text-align:center;
+            color:white;
+            opacity:1;
+            width:50%;
+            background-color:black;
+        }
+        body{
+            cursor: pointer;
+            border: 1px solid ;
+            margin : 0 ;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+<body>
+<script type="text/javascript">
+var student = [];
+for(var i=0;i<10;i++){
+    student [i] = divDom = document.createElement('div');
+    var round = Math.ceil(Math.random()*10)
+    student[i].style.left=window.innerWidth/round+'px';
+    student[i].style.top=window.innerHeight/round+'px';
+    document.body.appendChild(divDom);
+}
+
+</script>
+</body>
+<html>
